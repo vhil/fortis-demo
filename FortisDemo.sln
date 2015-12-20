@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FortisDemo.Website", "FortisDemo.Website\FortisDemo.Website.csproj", "{33A40F6C-1F98-40F7-8DD1-24AADAF93A7F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TDS", "TDS", "{B3347B92-63C8-48A5-91C2-8392B21B31A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FortisDemo.Model", "FortisDemo.Model\FortisDemo.Model.csproj", "{761AC308-FE3A-43A4-AD0E-20BA19B1814A}"
+EndProject
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "TDS.Content", "TDS.Content\TDS.Content.scproj", "{559D6573-C201-4B2D-A2B2-F3FC9C7A74DB}"
+EndProject
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "TDS.Master", "TDS.Master\TDS.Master.scproj", "{D97D27E9-9C07-4D83-8C0A-5666EDC41873}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{25C95246-2FA5-4104-A7F4-C89BA559B959}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{33A40F6C-1F98-40F7-8DD1-24AADAF93A7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33A40F6C-1F98-40F7-8DD1-24AADAF93A7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33A40F6C-1F98-40F7-8DD1-24AADAF93A7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33A40F6C-1F98-40F7-8DD1-24AADAF93A7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{761AC308-FE3A-43A4-AD0E-20BA19B1814A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{761AC308-FE3A-43A4-AD0E-20BA19B1814A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{761AC308-FE3A-43A4-AD0E-20BA19B1814A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{761AC308-FE3A-43A4-AD0E-20BA19B1814A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{559D6573-C201-4B2D-A2B2-F3FC9C7A74DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{559D6573-C201-4B2D-A2B2-F3FC9C7A74DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{559D6573-C201-4B2D-A2B2-F3FC9C7A74DB}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{559D6573-C201-4B2D-A2B2-F3FC9C7A74DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{559D6573-C201-4B2D-A2B2-F3FC9C7A74DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{559D6573-C201-4B2D-A2B2-F3FC9C7A74DB}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{D97D27E9-9C07-4D83-8C0A-5666EDC41873}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D97D27E9-9C07-4D83-8C0A-5666EDC41873}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D97D27E9-9C07-4D83-8C0A-5666EDC41873}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{D97D27E9-9C07-4D83-8C0A-5666EDC41873}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D97D27E9-9C07-4D83-8C0A-5666EDC41873}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D97D27E9-9C07-4D83-8C0A-5666EDC41873}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{559D6573-C201-4B2D-A2B2-F3FC9C7A74DB} = {B3347B92-63C8-48A5-91C2-8392B21B31A0}
+		{D97D27E9-9C07-4D83-8C0A-5666EDC41873} = {B3347B92-63C8-48A5-91C2-8392B21B31A0}
+	EndGlobalSection
+EndGlobal

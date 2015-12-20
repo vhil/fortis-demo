@@ -1,0 +1,12 @@
+# git ignore file
+_Lib*/
+packages*/
+obj*/
+bin*/
+TDS.Content/Debug*/
+TDS.Content/IconCache*/
+TDS.Master/Debug*/
+TDS.Master/IconCache*/
+TDS.Master/T4RenderCache*/
+TDS.Content/BuiltFiles_Debug.txt
+TDS.Master/BuiltFiles_Debug.txt
