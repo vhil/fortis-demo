@@ -1,20 +1,9 @@
-﻿using Fortis.Model.Fields;
-using Sitecore.Data;
+﻿using Sitecore.Data;
 
 namespace FortisDemo.Model
 {
 	public partial class SitecoreItem : ISitecoreItem
 	{
-		public virtual IDateTimeFieldWrapper UpdatedDate
-		{
-			get { return GetField<DateTimeFieldWrapper>("__Updated", "__smallupdateddate"); }
-		}
-
-		public virtual IDateTimeFieldWrapper CreatedDate
-		{
-			get { return GetField<DateTimeFieldWrapper>("__Created", "__smallcreateddate"); }
-		}
-
 		public override string ToString()
 		{
 			return string.Format(

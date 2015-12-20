@@ -134,8 +134,8 @@ var combinedFieldList = GetCombinedFieldList(combinedTemplateList);
 
 namespace <#= FullNamespace(template) #>
 {
-	using System;
-	using System.Collections.Generic;
+	using global::System;
+	using global::System.Collections.Generic;
 	using global::Fortis.Model;
 	using global::Fortis.Model.Fields;
 	using global::Fortis.Providers;
@@ -245,19 +245,19 @@ namespace <#= FullNamespace(template) #>
 #>	
 		#region <#= ClassItemName(template.Name) #> Constants 
 
-		public static class Constants
+		public static partial class Constants
 		{
 			public const string TemplateIdStr = "<#= template.ID.ToString("b").ToUpper() #>";
 			public static Guid TemplateId = new Guid(TemplateIdStr);
 		}
 
-		public static class FieldNames
+		public static partial class FieldNames
 		{
 <#foreach(var field in combinedFieldList) { #>
 			public const string <#= TitleCase(field.Name) #> = "<#= field.Name #>";
 <#}#>		}
 
-		public static class IndexFieldNames
+		public static partial class IndexFieldNames
 		{
 <#foreach(var field in combinedFieldList) { #>
 			public const string <#= TitleCase(field.Name) #> = "<#= field.Name.Replace(" ", "_").ToLowerInvariant() + GetFieldTypeSearchAffix(field.Type) #>";

@@ -1,0 +1,38 @@
+﻿@using System.Web.Mvc.Html
+@using Sitecore.Mvc
+<!DOCTYPE html>
+<html>
+<head>
+	@Html.Partial("~/Views/Metadata/Metadata.cshtml")
+	@Html.Sitecore().Placeholder("metadata")
+</head>
+<body>
+	<!-- header -->
+<div class="header-top">
+	@Html.Sitecore().Placeholder("header")
+</div>
+	@Html.Sitecore().Placeholder("content")
+	
+	<!-- footer -->
+	<div class="footer-bottom">
+		@Html.Sitecore().Placeholder("footer")
+	</div>
+
+	<!-- FlexSlider -->
+	<script defer src="/js/jquery.flexslider.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			SyntaxHighlighter.all();
+		});
+		$(window).load(function () {
+			$('.flexslider').flexslider({
+				animation: "slide",
+				start: function (slider) {
+					$('body').removeClass('loading');
+				}
+			});
+		});
+	</script>
+	<!-- FlexSlider -->
+</body>
+</html>

@@ -50,17 +50,18 @@ public class ProjectHeader
 }
 */
 #>
-using Sitecore.Data.Items;
-using Sitecore.ContentSearch;
-using Sitecore.ContentSearch.Linq.Common;
+using global::Sitecore.Data.Items;
+using global::Sitecore.ContentSearch;
+using global::Sitecore.ContentSearch.Linq.Common;
 
 #region Sitecore Item (Extendable base class)
 
 namespace <#=DefaultNamespace #>
 {
-	using System;
-	using System.Collections.Generic;
+	using global::System;
+	using global::System.Collections.Generic;
 	using global::Fortis.Model;
+	using global::Fortis.Model.Fields;
 	using global::Fortis.Providers;
 
 	/*
@@ -70,6 +71,17 @@ namespace <#=DefaultNamespace #>
 	*/
 	public partial interface ISitecoreItem : IItemWrapper
 	{
+		[IndexField(SitecoreItem.IndexFieldNames.UpdatedDate)]
+		IDateTimeFieldWrapper UpdatedDate { get; }
+
+		[IndexField(SitecoreItem.IndexFieldNames.UpdatedDate)]
+		DateTime UpdatedDateValue { get; }
+
+		[IndexField(SitecoreItem.IndexFieldNames.CreatedDate)]
+		IDateTimeFieldWrapper CreatedDate { get; }
+
+		[IndexField(SitecoreItem.IndexFieldNames.CreatedDate)]
+		DateTime CreatedDateValue { get; }
 	}
 
 	public partial class SitecoreItem : ItemWrapper, ISitecoreItem
@@ -93,6 +105,46 @@ namespace <#=DefaultNamespace #>
 			: base(id, lazyFields, spawnProvider)
 		{
 		}
+
+		[IndexField(IndexFieldNames.UpdatedDate)]
+		public virtual IDateTimeFieldWrapper UpdatedDate
+		{
+			get { return GetField<DateTimeFieldWrapper>(FieldNames.UpdatedDate, IndexFieldNames.UpdatedDate); }
+		}
+
+		[IndexField(IndexFieldNames.UpdatedDate)]
+		public virtual DateTime UpdatedDateValue
+		{
+			get { return this.UpdatedDate.Value; }
+		}
+
+		[IndexField(IndexFieldNames.CreatedDate)]
+		public virtual IDateTimeFieldWrapper CreatedDate
+		{
+			get { return GetField<DateTimeFieldWrapper>(FieldNames.CreatedDate, IndexFieldNames.CreatedDate); }
+		}
+
+		[IndexField(IndexFieldNames.CreatedDate)]
+		public virtual DateTime CreatedDateValue
+		{
+			get { return this.CreatedDate.Value; }
+		}
+
+		#region SitecoreItem Constants
+
+		public static partial class FieldNames
+		{
+			public const string UpdatedDate = "__Updated";
+			public const string CreatedDate = "__Created";
+		}
+
+		public static partial class IndexFieldNames
+		{
+			public const string UpdatedDate = "__smallupdateddate";
+			public const string CreatedDate = "__smallcreateddate";
+		}
+
+		#endregion
 	}
 }
 
