@@ -152,8 +152,11 @@
     <Content Include="App_Config\Include\Fortis\Fortis.Mvc.config" />
     <Content Include="Views\Layouts\Default.cshtml" />
     <Content Include="Views\Metadata\Metadata.cshtml" />
-    <Content Include="App_Config\Include\FortisDemo\SiteDefinitions.config" />
+    <Content Include="App_Config\Include\FortisDemo\SiteDefinitions.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="App_Config\Include\FortisDemo\FortisDemo.config" />
+    <Content Include="App_Config\Include\Fortis\Fortis.Presentation.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
