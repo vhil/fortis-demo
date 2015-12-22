@@ -19,7 +19,7 @@ content-length: 4
 ----version----
 language: en
 version: 1
-revision: 37ee2751-0ef6-4297-8035-bc5f0e4c6757
+revision: 2551d6ff-cd2c-4ec6-9142-e5ceca72334f
 
 ----field----
 field: {DD1074E7-7F1C-4178-9078-219EDF3BB445}
@@ -28,6 +28,20 @@ key: content title
 content-length: 7
 
 Contact
+----field----
+field: {0240B88C-4348-472E-A9AD-22AAC7D3DAE2}
+name: Content Body
+key: content body
+content-length: 996
+
+On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.
+----field----
+field: {A7D05526-C33D-41FB-A2BB-5BD43CC4ECFF}
+name: Content Image
+key: content image
+content-length: 58
+
+<image mediaid="{04DAD0FD-DB66-4070-881F-17264CA257E1}" />
 ----field----
 field: {A2659CBF-9C0C-4703-9CD9-86B5C10B972E}
 name: Navigation Title
@@ -55,14 +69,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-37ee2751-0ef6-4297-8035-bc5f0e4c6757
+2551d6ff-cd2c-4ec6-9142-e5ceca72334f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151220T235628Z
+20151222T132631Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

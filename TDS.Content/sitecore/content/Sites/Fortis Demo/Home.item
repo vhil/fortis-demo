@@ -12,7 +12,7 @@ templatekey: Home Page
 ----version----
 language: en
 version: 1
-revision: 60f806f4-6fe3-42bc-9fc5-a0cda86fd53b
+revision: 07efa13f-d46e-4643-a9c0-c26b885a3d3a
 
 ----field----
 field: {DD1074E7-7F1C-4178-9078-219EDF3BB445}
@@ -38,7 +38,7 @@ name: Content Image
 key: content image
 content-length: 58
 
-<image mediaid="{04DAD0FD-DB66-4070-881F-17264CA257E1}" />
+<image mediaid="{09135A1D-ABAC-4236-A199-CA7B2DD2C336}" />
 ----field----
 field: {A2659CBF-9C0C-4703-9CD9-86B5C10B972E}
 name: Navigation Title
@@ -66,14 +66,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-60f806f4-6fe3-42bc-9fc5-a0cda86fd53b
+07efa13f-d46e-4643-a9c0-c26b885a3d3a
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151222T131750Z
+20151222T132613Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

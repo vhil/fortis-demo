@@ -21,7 +21,7 @@ namespace FortisDemo.Website
 			var container = new Container();
 
 			RegisterFortis(container);
-		    RegisterFortisDemoTypes(container);
+		    RegisterFortisDemoWebsiteTypes(container);
 			container.RegisterMvcControllers(Assembly.GetExecutingAssembly());
 			container.RegisterMvcIntegratedFilterProvider();
 
@@ -36,7 +36,7 @@ namespace FortisDemo.Website
 			);
 		}
 
-	    private static void RegisterFortisDemoTypes(Container container)
+	    private static void RegisterFortisDemoWebsiteTypes(Container container)
 	    {
 	         container.Register<INavigationService, NavigationService>();
 	    }
