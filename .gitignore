@@ -10,3 +10,6 @@ TDS.Master/IconCache*/
 TDS.Master/T4RenderCache*/
 TDS.Content/BuiltFiles_Debug.txt
 TDS.Master/BuiltFiles_Debug.txt
+.vs/config/applicationhost.config
+TDS.Content/TDS.Content.scproj
+TDS.Master/TDS.Master.scproj
