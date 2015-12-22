@@ -10,6 +10,20 @@ template: {A7CB2CD5-C4B1-46A6-B92F-4EF8185B45EC}
 templatekey: Seo
 
 ----field----
+field: {FD4E2050-186C-4375-8B99-E8A85DD7436E}
+name: __Enable item fallback
+key: __enable item fallback
+content-length: 0
+
+
+----field----
+field: {61CF7151-0CBD-4DB4-9738-D753A55A6E65}
+name: __Enforce version presence
+key: __enforce version presence
+content-length: 0
+
+
+----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
 key: __sortorder
@@ -19,7 +33,7 @@ content-length: 4
 ----version----
 language: en
 version: 1
-revision: 75e6068c-131c-4967-9877-6cc36e8e2bbc
+revision: 9ff8bb22-93ce-4b8b-ab94-63debb021c06
 
 ----field----
 field: {E942D8DA-D769-42F0-A5CE-859D5B76ABF0}
@@ -55,14 +69,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-75e6068c-131c-4967-9877-6cc36e8e2bbc
+9ff8bb22-93ce-4b8b-ab94-63debb021c06
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151205T222229Z
+20151222T142459Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

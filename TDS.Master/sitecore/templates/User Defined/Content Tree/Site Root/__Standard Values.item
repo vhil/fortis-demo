@@ -10,6 +10,20 @@ template: {16C0EF20-4B23-4201-B57D-F8A60BADC17B}
 templatekey: Site Root
 
 ----field----
+field: {FD4E2050-186C-4375-8B99-E8A85DD7436E}
+name: __Enable item fallback
+key: __enable item fallback
+content-length: 0
+
+
+----field----
+field: {61CF7151-0CBD-4DB4-9738-D753A55A6E65}
+name: __Enforce version presence
+key: __enforce version presence
+content-length: 0
+
+
+----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
 key: __sortorder
@@ -26,7 +40,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: e85a3492-880e-4f24-ac4b-09b473336774
+revision: a7e5cf35-c7fe-4605-a17c-f6719b69d61b
 
 ----field----
 field: {37F274D8-A7D6-41FE-8CD5-A161ED72D9F0}
@@ -39,23 +53,23 @@ $name
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
-content-length: 15
+content-length: 16
 
-20140710T110522
+20140710T090522Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-e85a3492-880e-4f24-ac4b-09b473336774
+a7e5cf35-c7fe-4605-a17c-f6719b69d61b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151220T235512Z
+20151222T142502Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

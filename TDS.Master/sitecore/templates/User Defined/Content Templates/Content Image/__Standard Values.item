@@ -9,10 +9,24 @@ master: {00000000-0000-0000-0000-000000000000}
 template: {54A1B008-7584-4260-8571-2645F3C5786D}
 templatekey: Content Image
 
+----field----
+field: {FD4E2050-186C-4375-8B99-E8A85DD7436E}
+name: __Enable item fallback
+key: __enable item fallback
+content-length: 0
+
+
+----field----
+field: {61CF7151-0CBD-4DB4-9738-D753A55A6E65}
+name: __Enforce version presence
+key: __enforce version presence
+content-length: 0
+
+
 ----version----
 language: en
 version: 1
-revision: c5e5dc3a-cb13-43c5-adc1-728311428b16
+revision: dff2fd47-c1aa-4871-a4b2-00d90b4004bb
 
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
@@ -41,14 +55,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-c5e5dc3a-cb13-43c5-adc1-728311428b16
+dff2fd47-c1aa-4871-a4b2-00d90b4004bb
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151205T221436Z
+20151222T142452Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
