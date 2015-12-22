@@ -22,7 +22,7 @@ name: __Standard values
 key: __standard values
 content-length: 38
 
-{82660038-1A65-43E6-B83F-6C4972924AD4}
+{AAD58AAB-70B7-49A1-AA93-584E9A323A0F}
 ----field----
 field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
 name: __Icon
@@ -33,7 +33,7 @@ People/32x32/house.png
 ----version----
 language: en
 version: 1
-revision: 13c20493-05fd-412a-b557-22adffeb7648
+revision: 0e1f5607-7ae1-4fc4-be8f-a77efd1d0f6c
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -55,14 +55,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-13c20493-05fd-412a-b557-22adffeb7648
+0e1f5607-7ae1-4fc4-be8f-a77efd1d0f6c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151220T232419Z
+20151222T103406Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

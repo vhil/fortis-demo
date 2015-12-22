@@ -21,6 +21,7 @@
     <IISExpressUseClassicPipelineMode />
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
     <RestorePackages>true</RestorePackages>
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -150,13 +151,21 @@
     <Content Include="js\jquery.wmuSlider.js" />
     <Content Include="packages.config" />
     <Content Include="App_Config\Include\Fortis\Fortis.Mvc.config" />
-    <Content Include="Views\Layouts\Default.cshtml" />
-    <Content Include="Views\Metadata\Metadata.cshtml" />
+    <Content Include="Areas\Layout\Views\Layouts\Default.cshtml" />
+    <Content Include="Areas\Layout\Views\Markup\Partials\Metadata.cshtml" />
     <Content Include="App_Config\Include\FortisDemo\SiteDefinitions.config">
       <SubType>Designer</SubType>
     </Content>
     <Content Include="App_Config\Include\FortisDemo\FortisDemo.config" />
     <Content Include="App_Config\Include\Fortis\Fortis.Presentation.config" />
+    <Content Include="Areas\Layout\Views\Markup\Header.cshtml" />
+    <Content Include="Areas\Layout\Views\web.config" />
+    <Content Include="Areas\Layout\Views\Markup\Partials\Navigation.cshtml" />
+    <Content Include="Areas\ContentPage\Views\ContentPage\ContentBody.cshtml" />
+    <Content Include="Areas\Layout\Views\Markup\Footer.cshtml" />
+    <Content Include="Areas\ContentPage\Views\ContentPage\PageTitle.cshtml" />
+    <Content Include="Areas\Layout\Views\Markup\TwoColumnGrid.cshtml" />
+    <Content Include="Areas\ContentPage\Views\web.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -169,6 +178,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\DependencyInjections.cs" />
+    <Compile Include="Areas\ContentPage\ContentPageAreaRegistration.cs" />
+    <Compile Include="Areas\ContentPage\Controllers\ContentPageController.cs" />
+    <Compile Include="Areas\Layout\LayoutAreaRegistration.cs" />
+    <Compile Include="Areas\Layout\Controllers\MarkupController.cs" />
+    <Compile Include="Areas\Layout\Models\HeaderRenderingModel.cs" />
+    <Compile Include="Areas\Layout\Models\NavigationRenderingModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -176,6 +191,19 @@
       <Project>{761AC308-FE3A-43A4-AD0E-20BA19B1814A}</Project>
       <Name>FortisDemo.Model</Name>
     </ProjectReference>
+    <ProjectReference Include="..\FortisDemo.Navigation\FortisDemo.Navigation.csproj">
+      <Project>{7A40465C-60E8-408B-835F-75EFBF8AFEDE}</Project>
+      <Name>FortisDemo.Navigation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FortisDemo.Web.Mvc\FortisDemo.Web.Mvc.csproj">
+      <Project>{5ae55f25-57b4-405f-9712-4817d5e3b5ae}</Project>
+      <Name>FortisDemo.Web.Mvc</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Areas\ContentPage\Models\" />
+    <Folder Include="Areas\ContentPage\Views\Shared\" />
+    <Folder Include="Areas\Layout\Views\Shared\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -202,7 +230,6 @@
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
-  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>

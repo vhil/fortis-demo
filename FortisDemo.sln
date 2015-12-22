@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FortisDemo.Website", "FortisDemo.Website\FortisDemo.Website.csproj", "{33A40F6C-1F98-40F7-8DD1-24AADAF93A7F}"
 EndProject
@@ -13,12 +13,13 @@ Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "TDS.Content", "TDS.Content\
 EndProject
 Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "TDS.Master", "TDS.Master\TDS.Master.scproj", "{D97D27E9-9C07-4D83-8C0A-5666EDC41873}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{25C95246-2FA5-4104-A7F4-C89BA559B959}"
-	ProjectSection(SolutionItems) = preProject
-		.nuget\NuGet.Config = .nuget\NuGet.Config
-		.nuget\NuGet.exe = .nuget\NuGet.exe
-		.nuget\NuGet.targets = .nuget\NuGet.targets
-	EndProjectSection
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Fortis Demo", "Fortis Demo", "{D9E0612C-EDFB-42B3-83B2-699DA3005F29}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FortisDemo.Web.Mvc", "FortisDemo.Web.Mvc\FortisDemo.Web.Mvc.csproj", "{5AE55F25-57B4-405F-9712-4817D5E3B5AE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Navigation", "Navigation", "{A56B73F4-4D07-40EC-9B98-48E9B5523541}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FortisDemo.Navigation", "FortisDemo.Navigation\FortisDemo.Navigation.csproj", "{7A40465C-60E8-408B-835F-75EFBF8AFEDE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,7 +37,6 @@ Global
 		{761AC308-FE3A-43A4-AD0E-20BA19B1814A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{559D6573-C201-4B2D-A2B2-F3FC9C7A74DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{559D6573-C201-4B2D-A2B2-F3FC9C7A74DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{559D6573-C201-4B2D-A2B2-F3FC9C7A74DB}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
 		{559D6573-C201-4B2D-A2B2-F3FC9C7A74DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{559D6573-C201-4B2D-A2B2-F3FC9C7A74DB}.Release|Any CPU.Build.0 = Release|Any CPU
 		{559D6573-C201-4B2D-A2B2-F3FC9C7A74DB}.Release|Any CPU.Deploy.0 = Release|Any CPU
@@ -46,6 +46,14 @@ Global
 		{D97D27E9-9C07-4D83-8C0A-5666EDC41873}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D97D27E9-9C07-4D83-8C0A-5666EDC41873}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D97D27E9-9C07-4D83-8C0A-5666EDC41873}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{5AE55F25-57B4-405F-9712-4817D5E3B5AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AE55F25-57B4-405F-9712-4817D5E3B5AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AE55F25-57B4-405F-9712-4817D5E3B5AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AE55F25-57B4-405F-9712-4817D5E3B5AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A40465C-60E8-408B-835F-75EFBF8AFEDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A40465C-60E8-408B-835F-75EFBF8AFEDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A40465C-60E8-408B-835F-75EFBF8AFEDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A40465C-60E8-408B-835F-75EFBF8AFEDE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -53,5 +61,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{559D6573-C201-4B2D-A2B2-F3FC9C7A74DB} = {B3347B92-63C8-48A5-91C2-8392B21B31A0}
 		{D97D27E9-9C07-4D83-8C0A-5666EDC41873} = {B3347B92-63C8-48A5-91C2-8392B21B31A0}
+		{5AE55F25-57B4-405F-9712-4817D5E3B5AE} = {D9E0612C-EDFB-42B3-83B2-699DA3005F29}
+		{A56B73F4-4D07-40EC-9B98-48E9B5523541} = {D9E0612C-EDFB-42B3-83B2-699DA3005F29}
+		{7A40465C-60E8-408B-835F-75EFBF8AFEDE} = {A56B73F4-4D07-40EC-9B98-48E9B5523541}
 	EndGlobalSection
 EndGlobal

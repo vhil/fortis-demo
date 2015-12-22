@@ -116,7 +116,7 @@ namespace FortisDemo.Model.Templates.UserDefined
 	/// <para>/sitecore/templates/User Defined/Page Types/Home Page</para>
 	/// </summary>
 	[TemplateMapping(HomePageItem.Constants.TemplateIdStr, "InterfaceMap")]
-	public partial interface IHomePageItem : ISitecoreItem , FortisDemo.Model.Templates.UserDefined.IContentPageItem
+	public partial interface IHomePageItem : ISitecoreItem 
 	{		
 	}
 
@@ -140,108 +140,6 @@ namespace FortisDemo.Model.Templates.UserDefined
 			_item = item;
 		}
 
-		/// <summary><para>Template: Home Page</para><para>Field: HideFromNavigation</para><para>Data type: Checkbox</para></summary>
-		[IndexField(IndexFieldNames.HideFromNavigation)]
-		public virtual IBooleanFieldWrapper HideFromNavigation
-		{
-			get { return GetField<BooleanFieldWrapper>(FieldNames.HideFromNavigation, IndexFieldNames.HideFromNavigation); }
-		}
-
-		/// <summary><para>Template: Home Page</para><para>Field: HideFromNavigation</para><para>Data type: Checkbox</para></summary>
-		[IndexField(IndexFieldNames.HideFromNavigation)]
-		public bool HideFromNavigationValue
-		{
-			get { return HideFromNavigation.Value; }
-		}
-		/// <summary><para>Template: Home Page</para><para>Field: NavigationTitle</para><para>Data type: Single-Line Text</para></summary>
-		[IndexField(IndexFieldNames.NavigationTitle)]
-		public virtual ITextFieldWrapper NavigationTitle
-		{
-			get { return GetField<TextFieldWrapper>(FieldNames.NavigationTitle, IndexFieldNames.NavigationTitle); }
-		}
-
-		/// <summary><para>Template: Home Page</para><para>Field: NavigationTitle</para><para>Data type: Single-Line Text</para></summary>
-		[IndexField(IndexFieldNames.NavigationTitle)]
-		public string NavigationTitleValue
-		{
-			get { return NavigationTitle.Value; }
-		}
-		/// <summary><para>Template: Home Page</para><para>Field: ContentTitle</para><para>Data type: Single-Line Text</para></summary>
-		[IndexField(IndexFieldNames.ContentTitle)]
-		public virtual ITextFieldWrapper ContentTitle
-		{
-			get { return GetField<TextFieldWrapper>(FieldNames.ContentTitle, IndexFieldNames.ContentTitle); }
-		}
-
-		/// <summary><para>Template: Home Page</para><para>Field: ContentTitle</para><para>Data type: Single-Line Text</para></summary>
-		[IndexField(IndexFieldNames.ContentTitle)]
-		public string ContentTitleValue
-		{
-			get { return ContentTitle.Value; }
-		}
-		/// <summary><para>Template: Home Page</para><para>Field: ContentBody</para><para>Data type: Rich Text</para></summary>
-		[IndexField(IndexFieldNames.ContentBody)]
-		public virtual IRichTextFieldWrapper ContentBody
-		{
-			get { return GetField<RichTextFieldWrapper>(FieldNames.ContentBody, IndexFieldNames.ContentBody); }
-		}
-
-		/// <summary><para>Template: Home Page</para><para>Field: ContentBody</para><para>Data type: Rich Text</para></summary>
-		[IndexField(IndexFieldNames.ContentBody)]
-		public string ContentBodyValue
-		{
-			get { return ContentBody.Value; }
-		}
-		/// <summary><para>Template: Home Page</para><para>Field: ContentImage</para><para>Data type: Image</para></summary>
-		public virtual IImageFieldWrapper ContentImage
-		{
-			get { return GetField<ImageFieldWrapper>(FieldNames.ContentImage); }
-		}
-
-		/// <summary><para>Template: Home Page</para><para>Field: ContentImage</para><para>Data type: Image</para></summary>
-		public string ContentImageValue
-		{
-			get { return ContentImage.Value; }
-		}
-		/// <summary><para>Template: Home Page</para><para>Field: MetaDescription</para><para>Data type: Single-Line Text</para></summary>
-		[IndexField(IndexFieldNames.MetaDescription)]
-		public virtual ITextFieldWrapper MetaDescription
-		{
-			get { return GetField<TextFieldWrapper>(FieldNames.MetaDescription, IndexFieldNames.MetaDescription); }
-		}
-
-		/// <summary><para>Template: Home Page</para><para>Field: MetaDescription</para><para>Data type: Single-Line Text</para></summary>
-		[IndexField(IndexFieldNames.MetaDescription)]
-		public string MetaDescriptionValue
-		{
-			get { return MetaDescription.Value; }
-		}
-		/// <summary><para>Template: Home Page</para><para>Field: MetaKeywords</para><para>Data type: Single-Line Text</para></summary>
-		[IndexField(IndexFieldNames.MetaKeywords)]
-		public virtual ITextFieldWrapper MetaKeywords
-		{
-			get { return GetField<TextFieldWrapper>(FieldNames.MetaKeywords, IndexFieldNames.MetaKeywords); }
-		}
-
-		/// <summary><para>Template: Home Page</para><para>Field: MetaKeywords</para><para>Data type: Single-Line Text</para></summary>
-		[IndexField(IndexFieldNames.MetaKeywords)]
-		public string MetaKeywordsValue
-		{
-			get { return MetaKeywords.Value; }
-		}
-		/// <summary><para>Template: Home Page</para><para>Field: MetaTitle</para><para>Data type: Single-Line Text</para></summary>
-		[IndexField(IndexFieldNames.MetaTitle)]
-		public virtual ITextFieldWrapper MetaTitle
-		{
-			get { return GetField<TextFieldWrapper>(FieldNames.MetaTitle, IndexFieldNames.MetaTitle); }
-		}
-
-		/// <summary><para>Template: Home Page</para><para>Field: MetaTitle</para><para>Data type: Single-Line Text</para></summary>
-		[IndexField(IndexFieldNames.MetaTitle)]
-		public string MetaTitleValue
-		{
-			get { return MetaTitle.Value; }
-		}
 	
 		#region HomePageItem Constants 
 
@@ -253,26 +151,10 @@ namespace FortisDemo.Model.Templates.UserDefined
 
 		public static partial class FieldNames
 		{
-			public const string HideFromNavigation = "Hide From Navigation";
-			public const string NavigationTitle = "Navigation Title";
-			public const string ContentTitle = "Content Title";
-			public const string ContentBody = "Content Body";
-			public const string ContentImage = "Content Image";
-			public const string MetaDescription = "Meta Description";
-			public const string MetaKeywords = "Meta Keywords";
-			public const string MetaTitle = "Meta Title";
 		}
 
 		public static partial class IndexFieldNames
 		{
-			public const string HideFromNavigation = "hide_from_navigation";
-			public const string NavigationTitle = "navigation_title";
-			public const string ContentTitle = "content_title";
-			public const string ContentBody = "content_body";
-			public const string ContentImage = "content_image";
-			public const string MetaDescription = "meta_description";
-			public const string MetaKeywords = "meta_keywords";
-			public const string MetaTitle = "meta_title";
 		}
 
 		#endregion

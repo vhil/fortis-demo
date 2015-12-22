@@ -12,7 +12,7 @@ templatekey: Site Root
 ----version----
 language: en
 version: 1
-revision: 30a34a39-677d-4e23-b743-c814e9a05e27
+revision: 36da1ce5-f19d-49ab-9694-8f253d59a63f
 
 ----field----
 field: {37F274D8-A7D6-41FE-8CD5-A161ED72D9F0}
@@ -21,6 +21,13 @@ key: site title
 content-length: 11
 
 Fortis Demo
+----field----
+field: {BCB2AF99-C856-4089-BA93-B07A8984ABCD}
+name: Site Logo
+key: site logo
+content-length: 58
+
+<image mediaid="{7EB1DD5B-9BD4-403F-A190-CCFD32C6E60C}" />
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -48,14 +55,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-30a34a39-677d-4e23-b743-c814e9a05e27
+36da1ce5-f19d-49ab-9694-8f253d59a63f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151220T232725Z
+20151222T104205Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

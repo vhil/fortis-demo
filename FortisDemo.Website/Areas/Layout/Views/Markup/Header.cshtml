@@ -1,0 +1,22 @@
+﻿@model FortisDemo.Website.Areas.Layout.Models.HeaderRenderingModel
+<div class="container">
+    <div class="logo">
+        <a href="/">
+            @Model.SiteRoot.SiteLogo.Render()
+        </a>
+    </div>
+    <div class="head-nav">
+        <span class="menu"> </span>
+        @Html.Partial("~/Areas/Layout/Views/Markup/Partials/Navigation.cshtml", Model)
+    </div>
+    <div class="clearfix"> </div>
+    <!-- script-for-nav -->
+    <script>
+		$("span.menu").click(function() {
+			$(".head-nav ul").slideToggle(300, function() {
+				// Animation complete.
+			});
+		});
+    </script>
+    <!-- script-for-nav -->
+</div>

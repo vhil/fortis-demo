@@ -1,0 +1,14 @@
+﻿@model FortisDemo.Website.Areas.Layout.Models.NavigationRenderingModel
+
+@if (@Model.NavigationItems.Any())
+{
+	<ul>
+		@foreach (var nav in @Model.NavigationItems)
+		{
+			<li @(Model.PageItem.ItemID == nav.ItemID ? "class=active" : "")>
+				<a href="@nav.GenerateUrl()">@nav.NavigationTitle</a>
+			</li>
+		}
+		<div class="clearfix"> </div>
+	</ul>
+}

@@ -5,6 +5,7 @@ using Fortis.Model;
 using Fortis.Mvc.Providers;
 using Fortis.Providers;
 using Fortis.Search;
+using FortisDemo.Navigation;
 using FortisDemo.Website;
 using SimpleInjector;
 using SimpleInjector.Integration.Web.Mvc;
@@ -20,7 +21,7 @@ namespace FortisDemo.Website
 			var container = new Container();
 
 			RegisterFortis(container);
-
+		    RegisterFortisDemoTypes(container);
 			container.RegisterMvcControllers(Assembly.GetExecutingAssembly());
 			container.RegisterMvcIntegratedFilterProvider();
 
@@ -35,7 +36,12 @@ namespace FortisDemo.Website
 			);
 		}
 
-		private static void RegisterFortis(Container container)
+	    private static void RegisterFortisDemoTypes(Container container)
+	    {
+	         container.Register<INavigationService, NavigationService>();
+	    }
+
+	    private static void RegisterFortis(Container container)
 		{
 			container.Register<IItemFactory, ItemFactory>(Lifestyle.Singleton);
 			container.Register<IContextProvider, ContextProvider>(Lifestyle.Singleton);
