@@ -98,7 +98,6 @@ namespace FortisDemo.Model
 
 #endregion
 
-
 #region Home Page (UserDefined)
 
 namespace FortisDemo.Model.Templates.UserDefined
@@ -280,6 +279,7 @@ namespace FortisDemo.Model.Templates.UserDefined
 }
 
 #endregion
+
 #region Site Root (UserDefined)
 
 namespace FortisDemo.Model.Templates.UserDefined
@@ -387,6 +387,7 @@ namespace FortisDemo.Model.Templates.UserDefined
 }
 
 #endregion
+
 #region Content Title (UserDefined)
 
 namespace FortisDemo.Model.Templates.UserDefined
@@ -476,6 +477,7 @@ namespace FortisDemo.Model.Templates.UserDefined
 }
 
 #endregion
+
 #region Content Body (UserDefined)
 
 namespace FortisDemo.Model.Templates.UserDefined
@@ -565,6 +567,7 @@ namespace FortisDemo.Model.Templates.UserDefined
 }
 
 #endregion
+
 #region Content Image (UserDefined)
 
 namespace FortisDemo.Model.Templates.UserDefined
@@ -646,6 +649,7 @@ namespace FortisDemo.Model.Templates.UserDefined
 }
 
 #endregion
+
 #region Content Page (UserDefined)
 
 namespace FortisDemo.Model.Templates.UserDefined
@@ -827,6 +831,7 @@ namespace FortisDemo.Model.Templates.UserDefined
 }
 
 #endregion
+
 #region Seo (UserDefined)
 
 namespace FortisDemo.Model.Templates.UserDefined
@@ -968,6 +973,7 @@ namespace FortisDemo.Model.Templates.UserDefined
 }
 
 #endregion
+
 #region Navigation (UserDefined)
 
 namespace FortisDemo.Model.Templates.UserDefined
@@ -1083,3 +1089,4 @@ namespace FortisDemo.Model.Templates.UserDefined
 }
 
 #endregion
+
