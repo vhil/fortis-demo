@@ -1,6 +1,6 @@
 ﻿using System.Web.Mvc;
 
-namespace FortisDemo.Website.Areas.Layout
+namespace FortisDemo.Website.Areas.Markup
 {
     public class LayoutAreaRegistration : AreaRegistration 
     {
@@ -8,7 +8,7 @@ namespace FortisDemo.Website.Areas.Layout
         {
             get 
             {
-                return "Layout";
+                return "Markup";
             }
         }
 
@@ -16,7 +16,7 @@ namespace FortisDemo.Website.Areas.Layout
         {
             context.MapRoute(
                 "Layout_default",
-                "Layout/{controller}/{action}/{id}",
+                "Markup/{controller}/{action}/{id}",
                 new { action = "Index", id = UrlParameter.Optional }
             );
         }

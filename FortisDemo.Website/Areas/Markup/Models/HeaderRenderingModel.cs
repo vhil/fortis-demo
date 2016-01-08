@@ -2,7 +2,7 @@
 using Fortis.Model;
 using FortisDemo.Model.Templates.UserDefined;
 
-namespace FortisDemo.Website.Areas.Layout.Models
+namespace FortisDemo.Website.Areas.Markup.Models
 {
     public class HeaderRenderingModel : NavigationRenderingModel
     {

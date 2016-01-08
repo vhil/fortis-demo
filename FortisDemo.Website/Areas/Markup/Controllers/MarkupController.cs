@@ -3,9 +3,9 @@ using Fortis.Model;
 using FortisDemo.Model.Templates.UserDefined;
 using FortisDemo.Navigation;
 using FortisDemo.Web.Mvc.Controllers;
-using FortisDemo.Website.Areas.Layout.Models;
+using FortisDemo.Website.Areas.Markup.Models;
 
-namespace FortisDemo.Website.Areas.Layout.Controllers
+namespace FortisDemo.Website.Areas.Markup.Controllers
 {
     public class MarkupController : WebsiteController
     {

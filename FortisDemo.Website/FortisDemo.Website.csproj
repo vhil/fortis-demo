@@ -151,20 +151,20 @@
     <Content Include="js\jquery.wmuSlider.js" />
     <Content Include="packages.config" />
     <Content Include="App_Config\Include\Fortis\Fortis.Mvc.config" />
-    <Content Include="Areas\Layout\Views\Layouts\Default.cshtml" />
-    <Content Include="Areas\Layout\Views\Markup\Partials\Metadata.cshtml" />
+    <Content Include="Areas\Markup\Views\Layouts\Default.cshtml" />
+    <Content Include="Areas\Markup\Views\Markup\Partials\Metadata.cshtml" />
     <Content Include="App_Config\Include\FortisDemo\SiteDefinitions.config">
       <SubType>Designer</SubType>
     </Content>
     <Content Include="App_Config\Include\FortisDemo\FortisDemo.config" />
     <Content Include="App_Config\Include\Fortis\Fortis.Presentation.config" />
-    <Content Include="Areas\Layout\Views\Markup\Header.cshtml" />
-    <Content Include="Areas\Layout\Views\web.config" />
-    <Content Include="Areas\Layout\Views\Markup\Partials\Navigation.cshtml" />
+    <Content Include="Areas\Markup\Views\Markup\Header.cshtml" />
+    <Content Include="Areas\Markup\Views\web.config" />
+    <Content Include="Areas\Markup\Views\Markup\Partials\Navigation.cshtml" />
     <Content Include="Areas\ContentPage\Views\ContentPage\ContentBody.cshtml" />
-    <Content Include="Areas\Layout\Views\Markup\Footer.cshtml" />
+    <Content Include="Areas\Markup\Views\Markup\Footer.cshtml" />
     <Content Include="Areas\ContentPage\Views\ContentPage\PageTitle.cshtml" />
-    <Content Include="Areas\Layout\Views\Markup\TwoColumnGrid.cshtml" />
+    <Content Include="Areas\Markup\Views\Markup\TwoColumnGrid.cshtml" />
     <Content Include="Areas\ContentPage\Views\web.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -180,10 +180,10 @@
     <Compile Include="App_Start\DependencyInjections.cs" />
     <Compile Include="Areas\ContentPage\ContentPageAreaRegistration.cs" />
     <Compile Include="Areas\ContentPage\Controllers\ContentPageController.cs" />
-    <Compile Include="Areas\Layout\LayoutAreaRegistration.cs" />
-    <Compile Include="Areas\Layout\Controllers\MarkupController.cs" />
-    <Compile Include="Areas\Layout\Models\HeaderRenderingModel.cs" />
-    <Compile Include="Areas\Layout\Models\NavigationRenderingModel.cs" />
+    <Compile Include="Areas\Markup\LayoutAreaRegistration.cs" />
+    <Compile Include="Areas\Markup\Controllers\MarkupController.cs" />
+    <Compile Include="Areas\Markup\Models\HeaderRenderingModel.cs" />
+    <Compile Include="Areas\Markup\Models\NavigationRenderingModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -203,7 +203,7 @@
   <ItemGroup>
     <Folder Include="Areas\ContentPage\Models\" />
     <Folder Include="Areas\ContentPage\Views\Shared\" />
-    <Folder Include="Areas\Layout\Views\Shared\" />
+    <Folder Include="Areas\Markup\Views\Shared\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
