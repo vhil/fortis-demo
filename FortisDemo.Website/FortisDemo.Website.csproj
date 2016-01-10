@@ -161,9 +161,9 @@
     <Content Include="Areas\Markup\Views\Markup\Header.cshtml" />
     <Content Include="Areas\Markup\Views\web.config" />
     <Content Include="Areas\Markup\Views\Markup\Partials\Navigation.cshtml" />
-    <Content Include="Areas\ContentPage\Views\ContentPage\ContentBody.cshtml" />
+    <Content Include="Areas\ContentPage\Views\ContentBody.cshtml" />
     <Content Include="Areas\Markup\Views\Markup\Footer.cshtml" />
-    <Content Include="Areas\ContentPage\Views\ContentPage\PageTitle.cshtml" />
+    <Content Include="Areas\ContentPage\Views\PageTitle.cshtml" />
     <Content Include="Areas\Markup\Views\Markup\TwoColumnGrid.cshtml" />
     <Content Include="Areas\ContentPage\Views\web.config" />
     <None Include="Web.Debug.config">
@@ -179,8 +179,7 @@
   <ItemGroup>
     <Compile Include="App_Start\DependencyInjections.cs" />
     <Compile Include="Areas\ContentPage\ContentPageAreaRegistration.cs" />
-    <Compile Include="Areas\ContentPage\Controllers\ContentPageController.cs" />
-    <Compile Include="Areas\Markup\LayoutAreaRegistration.cs" />
+    <Compile Include="Areas\Markup\MarkupAreaRegistration.cs" />
     <Compile Include="Areas\Markup\Controllers\MarkupController.cs" />
     <Compile Include="Areas\Markup\Models\HeaderRenderingModel.cs" />
     <Compile Include="Areas\Markup\Models\NavigationRenderingModel.cs" />
@@ -201,8 +200,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Areas\ContentPage\Models\" />
-    <Folder Include="Areas\ContentPage\Views\Shared\" />
     <Folder Include="Areas\Markup\Views\Shared\" />
   </ItemGroup>
   <PropertyGroup>

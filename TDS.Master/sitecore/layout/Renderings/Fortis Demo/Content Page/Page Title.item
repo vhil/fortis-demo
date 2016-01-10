@@ -6,32 +6,25 @@ path: /sitecore/layout/Renderings/Fortis Demo/Content Page/Page Title
 parent: {A3EE5891-D712-4A6F-95D2-42DF2E220BC7}
 name: Page Title
 master: {00000000-0000-0000-0000-000000000000}
-template: {2A3E91A0-7987-44B5-AB34-35C2D9DE83B9}
-templatekey: Controller rendering
+template: {99F8905D-4A87-4EB8-9F8B-A9BEBFB3ADD6}
+templatekey: View rendering
 
 ----field----
-field: {E64AD073-DFCC-4D20-8C0B-FE5AA6226CD7}
-name: Controller
-key: controller
-content-length: 11
+field: {51B435BC-F7B9-478A-9C51-52916AF96FF5}
+name: Path
+key: path
+content-length: 42
 
-ContentPage
+~/Areas/ContentPage/Views/PageTitle.cshtml
 ----field----
-field: {DED9E431-3604-4921-A4B3-A6EC7636A5B6}
-name: Controller Action
-key: controller action
-content-length: 9
-
-PageTitle
-----field----
-field: {FC5C3451-DFDE-4778-9901-5D0B1DA1E212}
+field: {F869E724-0718-43E4-92A0-D612FE191CFB}
 name: Area
 key: area
 content-length: 11
 
 ContentPage
 ----field----
-field: {1C0AF338-70A8-455F-8366-173135E03BE6}
+field: {F4069D71-74D7-4422-941D-54B517CF3001}
 name: Placeholder
 key: placeholder
 content-length: 7
@@ -40,7 +33,7 @@ content
 ----version----
 language: en
 version: 1
-revision: e10ec5ff-bfaf-4967-a4e1-4ed7b1cff2de
+revision: 04254a07-ff56-41c6-a498-6416137f0b21
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -55,14 +48,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-e10ec5ff-bfaf-4967-a4e1-4ed7b1cff2de
+04254a07-ff56-41c6-a498-6416137f0b21
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151222T130402Z
+20160110T221535Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

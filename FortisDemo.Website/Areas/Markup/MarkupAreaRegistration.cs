@@ -2,7 +2,7 @@
 
 namespace FortisDemo.Website.Areas.Markup
 {
-    public class LayoutAreaRegistration : AreaRegistration 
+    public class MarkupAreaRegistration : AreaRegistration 
     {
         public override string AreaName 
         {
