@@ -69,6 +69,7 @@
     <SitecoreItem Include="sitecore\layout\Layouts\Default.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
       <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+      <Icon>/temp/IconCache/Applications/32x32/window.png</Icon>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\layout\Renderings.item">
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
@@ -85,10 +86,12 @@
     <SitecoreItem Include="sitecore\layout\Renderings\Fortis Demo\Content Page\Content Body.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <Icon>/temp/IconCache/Software/32x32/element.png</Icon>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\layout\Renderings\Fortis Demo\Content Page\Page Title.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <Icon>/temp/IconCache/Software/32x32/element.png</Icon>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\layout\Renderings\Fortis Demo\Markup.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
