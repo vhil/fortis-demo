@@ -1,0 +1,16 @@
+﻿@model FortisDemo.Website.Areas.Products.Models.ProductListRenderingModel
+
+<div class="showcase">
+	<div class="container ">
+		@foreach (var productPageItem in Model.Products)
+		{
+			<div class="col-md-3 case">
+				@productPageItem.ContentImage.Render(new { @class = "img-responsive", mw = 257 })
+				<a href="@productPageItem.GenerateUrl()">
+					<h6>@productPageItem.ContentTitle </h6>
+				</a>
+				<p>@productPageItem.ContentBody</p>
+			</div>}
+		<div class="clearfix"> </div>
+	</div>
+</div>

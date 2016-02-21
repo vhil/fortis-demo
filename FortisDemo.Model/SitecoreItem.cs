@@ -1,9 +1,18 @@
-﻿using Sitecore.Data;
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using Sitecore.ContentSearch;
+using Sitecore.ContentSearch.Converters;
+using Sitecore.Data;
 
 namespace FortisDemo.Model
 {
 	public partial class SitecoreItem : ISitecoreItem
 	{
+		[TypeConverter(typeof(IndexFieldEnumerableConverter))]
+		[IndexField("_path")]
+		public virtual IEnumerable<Guid> Paths { get; set; }
+
 		public override string ToString()
 		{
 			return string.Format(

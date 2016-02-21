@@ -30,10 +30,31 @@ key: placeholder
 content-length: 4
 
 body
+----field----
+field: {2E51DF70-D3E4-458C-B03A-95C734DD39E7}
+name: Data source
+key: data source
+content-length: 0
+
+
+----field----
+field: {B5B27AF1-25EF-405C-87CE-369B3A004016}
+name: Datasource Location
+key: datasource location
+content-length: 51
+
+/sitecore/content/Sites/fortis-demo/website-content
+----field----
+field: {1A7C85E5-DC0B-490D-9187-BB1DBCB4C72F}
+name: Datasource Template
+key: datasource template
+content-length: 56
+
+/sitecore/templates/User Defined/Page Types/Content Page
 ----version----
 language: en
 version: 1
-revision: 1922a119-f51f-460f-a43b-bbba20ef30e2
+revision: f68f3b02-9f6d-4c2d-9b2c-f8244c3c0c71
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -48,14 +69,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-1922a119-f51f-460f-a43b-bbba20ef30e2
+f68f3b02-9f6d-4c2d-9b2c-f8244c3c0c71
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160110T221514Z
+20160221T212719Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

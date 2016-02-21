@@ -6,6 +6,7 @@ using Fortis.Mvc.Providers;
 using Fortis.Providers;
 using Fortis.Search;
 using FortisDemo.Navigation;
+using FortisDemo.Products;
 using FortisDemo.Website;
 using SimpleInjector;
 using SimpleInjector.Integration.Web.Mvc;
@@ -38,6 +39,7 @@ namespace FortisDemo.Website
 
 	    private static void RegisterFortisDemoWebsiteTypes(Container container)
 	    {
+			 container.Register<IProductService, ProductService>();
 	         container.Register<INavigationService, NavigationService>();
 	    }
 

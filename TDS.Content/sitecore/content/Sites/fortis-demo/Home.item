@@ -1,0 +1,72 @@
+----item----
+version: 1
+id: {9091A338-78A6-43A1-AA30-19CE056804F9}
+database: master
+path: /sitecore/content/Sites/fortis-demo/Home
+parent: {1DC444BA-6278-4312-9854-2A4AF74E10C7}
+name: Home
+master: {00000000-0000-0000-0000-000000000000}
+template: {0C4BBB1E-5B0F-41AA-B5A0-E3226076C676}
+templatekey: Home Page
+
+----version----
+language: en
+version: 1
+revision: f70d5e46-ef4f-4a27-a201-cb772b7c01dc
+
+----field----
+field: {DD1074E7-7F1C-4178-9078-219EDF3BB445}
+name: Content Title
+key: content title
+content-length: 4
+
+Home
+----field----
+field: {A7D05526-C33D-41FB-A2BB-5BD43CC4ECFF}
+name: Content Image
+key: content image
+content-length: 58
+
+<image mediaid="{09135A1D-ABAC-4236-A199-CA7B2DD2C336}" />
+----field----
+field: {A2659CBF-9C0C-4703-9CD9-86B5C10B972E}
+name: Navigation Title
+key: navigation title
+content-length: 4
+
+Home
+----field----
+field: {E942D8DA-D769-42F0-A5CE-859D5B76ABF0}
+name: Meta Title
+key: meta title
+content-length: 4
+
+Home
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151220T235421Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+f70d5e46-ef4f-4a27-a201-cb772b7c01dc
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20160110T192334Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

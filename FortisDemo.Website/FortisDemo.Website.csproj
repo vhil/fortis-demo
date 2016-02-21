@@ -49,6 +49,18 @@
       <HintPath>..\packages\Fortis.Mvc-5.2.1.0.0\lib\net45\Fortis.Mvc.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Fortis.Search.Lucene, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Fortis.Search.Lucene.1.0.0.1\lib\net45\Fortis.Search.Lucene.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Helpfulcore.RenderingExceptions, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Helpfulcore.RenderingExceptions.1.0.3\lib\Helpfulcore.RenderingExceptions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Helpfulcore.RenderingExceptions.Types, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Helpfulcore.RenderingExceptions.Types.1.0.0\lib\Helpfulcore.RenderingExceptions.Types.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
@@ -166,6 +178,13 @@
     <Content Include="Areas\ContentPage\Views\PageTitle.cshtml" />
     <Content Include="Areas\Markup\Views\Markup\TwoColumnGrid.cshtml" />
     <Content Include="Areas\ContentPage\Views\web.config" />
+    <Content Include="Areas\Product\Views\web.config" />
+    <Content Include="Areas\Product\Views\Product\ProductList.cshtml" />
+    <Content Include="App_Config\Include\Fortis\Fortis.Search.Lucene.config" />
+    <Content Include="Views\Shared\RenderingExceptions\UnhandledException.cshtml" />
+    <Content Include="Views\Shared\RenderingExceptions\RenderingParametersException.cshtml" />
+    <Content Include="Views\Shared\RenderingExceptions\RenderingException.cshtml" />
+    <Content Include="App_Config\Include\Helpfulcore\Helpfulcore.RenderingExceptions.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -183,6 +202,9 @@
     <Compile Include="Areas\Markup\Controllers\MarkupController.cs" />
     <Compile Include="Areas\Markup\Models\HeaderRenderingModel.cs" />
     <Compile Include="Areas\Markup\Models\NavigationRenderingModel.cs" />
+    <Compile Include="Areas\Product\Controllers\ProductController.cs" />
+    <Compile Include="Areas\Product\Models\ProductListRenderingModel.cs" />
+    <Compile Include="Areas\Product\ProductsAreaRegistration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -193,6 +215,10 @@
     <ProjectReference Include="..\FortisDemo.Navigation\FortisDemo.Navigation.csproj">
       <Project>{7A40465C-60E8-408B-835F-75EFBF8AFEDE}</Project>
       <Name>FortisDemo.Navigation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FortisDemo.Products\FortisDemo.Products.csproj">
+      <Project>{DDA2E930-7D92-4131-8765-E853C40C9459}</Project>
+      <Name>FortisDemo.Products</Name>
     </ProjectReference>
     <ProjectReference Include="..\FortisDemo.Web.Mvc\FortisDemo.Web.Mvc.csproj">
       <Project>{5ae55f25-57b4-405f-9712-4817d5e3b5ae}</Project>
@@ -232,7 +258,9 @@
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
     <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
   </Target>
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
