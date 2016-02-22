@@ -54,7 +54,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Helpfulcore.RenderingExceptions, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Helpfulcore.RenderingExceptions.1.0.3\lib\Helpfulcore.RenderingExceptions.dll</HintPath>
+      <HintPath>..\packages\Helpfulcore.RenderingExceptions.1.0.4\lib\Helpfulcore.RenderingExceptions.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Helpfulcore.RenderingExceptions.Types, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
