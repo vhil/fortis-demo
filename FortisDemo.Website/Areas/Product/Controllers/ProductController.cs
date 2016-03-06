@@ -3,9 +3,9 @@ using Fortis.Model;
 using FortisDemo.Model.Templates.UserDefined;
 using FortisDemo.Products;
 using FortisDemo.Web.Mvc.Controllers;
-using FortisDemo.Website.Areas.Products.Models;
+using FortisDemo.Website.Areas.Product.Models;
 
-namespace FortisDemo.Website.Areas.Products.Controllers
+namespace FortisDemo.Website.Areas.Product.Controllers
 {
 	public class ProductController : WebsiteController
 	{

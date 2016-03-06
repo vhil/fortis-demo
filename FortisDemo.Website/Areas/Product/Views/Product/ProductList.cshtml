@@ -1,8 +1,8 @@
-﻿@model FortisDemo.Website.Areas.Products.Models.ProductListRenderingModel
+﻿@model FortisDemo.Website.Areas.Product.Models.ProductListRenderingModel
 
 <div class="showcase">
 	<div class="container ">
-		@foreach (var productPageItem in Model.Products)
+		@foreach (var productPageItem in Model.Products.OrderBy(x => x.ContentTitle.Value))
 		{
 			<div class="col-md-3 case">
 				@productPageItem.ContentImage.Render(new { @class = "img-responsive", mw = 257 })

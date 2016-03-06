@@ -2,7 +2,7 @@
 using Fortis.Model;
 using FortisDemo.Model.Templates.UserDefined;
 
-namespace FortisDemo.Website.Areas.Products.Models
+namespace FortisDemo.Website.Areas.Product.Models
 {
 	public class ProductListRenderingModel : RenderingModel<IContentPageItem, IContentPageItem>
 	{

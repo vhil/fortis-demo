@@ -1,0 +1,79 @@
+----item----
+version: 1
+id: {72CEB7E5-1656-4982-B7F1-94BA7DC79BEE}
+database: master
+path: /sitecore/system/Modules/Wildcards/Routes/Product Page Route
+parent: {BBB32717-39E5-4D9B-8BF9-44A6AC37F060}
+name: Product Page Route
+master: {00000000-0000-0000-0000-000000000000}
+template: {B4C339CC-57FD-4FF2-ACBA-120B72C5FE78}
+templatekey: Wildcard Route
+
+----field----
+field: {55448319-A0B0-4666-BE52-75356F7323B5}
+name: Wildcard Items
+key: wildcard items
+content-length: 38
+
+{5F25570D-8A87-4396-B4CD-F0B70A91EA95}
+----field----
+field: {0B3E767A-F643-4E3A-8F06-8361E1715BEA}
+name: Url Generation Rules
+key: url generation rules
+content-length: 30
+
+0=%40Product%20ID&1=%40%40Name
+----field----
+field: {D10757E8-C736-45A4-8AD6-20B33953F725}
+name: Item Resolving Rules
+key: item resolving rules
+content-length: 20
+
+0=product_id&1=_name
+----field----
+field: {17400A3B-3BC1-4175-8E64-C9D722289390}
+name: Item Templates
+key: item templates
+content-length: 38
+
+{2ECC037F-C1B0-49BF-9E94-311F6CCA8D27}
+----field----
+field: {CFC9950C-99D8-4991-B420-8DC3300F59A8}
+name: Item Search Root Node
+key: item search root node
+content-length: 52
+
+/sitecore/content/shared-content/products-repository
+----version----
+language: en
+version: 1
+revision: e9b78e7f-f758-4907-90da-831fbcccfb8f
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20160221T211314Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+e9b78e7f-f758-4907-90da-831fbcccfb8f
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20160221T221624Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

@@ -1164,6 +1164,175 @@ namespace FortisDemo.Model.Templates.UserDefined
 }
 
 #endregion
+#region Wildcard Route (Custom)
+
+namespace FortisDemo.Model.Templates.Custom
+{
+	using global::System;
+	using global::System.Collections.Generic;
+	using global::Fortis.Model;
+	using global::Fortis.Model.Fields;
+	using global::Fortis.Providers;
+
+	/// <summary>
+	/// <para>Template interface</para>
+	/// <para>Template: Wildcard Route</para>
+	/// <para>ID: {B4C339CC-57FD-4FF2-ACBA-120B72C5FE78}</para>
+	/// <para>/sitecore/templates/Wildcards/Wildcard Route</para>
+	/// </summary>
+	[TemplateMapping(WildcardRouteItem.Constants.TemplateIdStr, "InterfaceMap")]
+	public partial interface IWildcardRouteItem : ISitecoreItem 
+	{		
+		/// <summary>
+		/// <para>Template: Wildcard Route</para><para>Field: ItemResolvingRules</para><para>Data type: Name Value List</para>
+		/// </summary>
+		ITextFieldWrapper ItemResolvingRules { get; }
+		string ItemResolvingRulesValue { get; }
+		/// <summary>
+		/// <para>Template: Wildcard Route</para><para>Field: ItemSearchRootNode</para><para>Data type: Internal Link</para>
+		/// </summary>
+		ITextFieldWrapper ItemSearchRootNode { get; }
+		string ItemSearchRootNodeValue { get; }
+		/// <summary>
+		/// <para>Template: Wildcard Route</para><para>Field: ItemTemplates</para><para>Data type: TreelistEx</para>
+		/// </summary>
+		[IndexField(WildcardRouteItem.IndexFieldNames.ItemTemplates)]
+		IListFieldWrapper ItemTemplates { get; }
+
+		/// <summary>
+		/// <para>Template: Wildcard Route</para><para>Field: ItemTemplates</para><para>Data type: TreelistEx</para>
+		/// </summary>
+		[IndexField(WildcardRouteItem.IndexFieldNames.ItemTemplates)]
+		IEnumerable<Guid> ItemTemplatesValue { get; }
+		/// <summary>
+		/// <para>Template: Wildcard Route</para><para>Field: UrlGenerationRules</para><para>Data type: Name Value List</para>
+		/// </summary>
+		ITextFieldWrapper UrlGenerationRules { get; }
+		string UrlGenerationRulesValue { get; }
+		/// <summary>
+		/// <para>Template: Wildcard Route</para><para>Field: WildcardItems</para><para>Data type: TreelistEx</para>
+		/// </summary>
+		[IndexField(WildcardRouteItem.IndexFieldNames.WildcardItems)]
+		IListFieldWrapper WildcardItems { get; }
+
+		/// <summary>
+		/// <para>Template: Wildcard Route</para><para>Field: WildcardItems</para><para>Data type: TreelistEx</para>
+		/// </summary>
+		[IndexField(WildcardRouteItem.IndexFieldNames.WildcardItems)]
+		IEnumerable<Guid> WildcardItemsValue { get; }
+	}
+
+	/// <summary>
+	/// <para>Template class</para><para>/sitecore/templates/Wildcards/Wildcard Route</para>
+	/// </summary>
+	[PredefinedQuery("TemplateId", ComparisonType.Equal, WildcardRouteItem.Constants.TemplateIdStr, typeof(Guid))]
+	[TemplateMapping(WildcardRouteItem.Constants.TemplateIdStr, "")]
+	public partial class WildcardRouteItem : SitecoreItem, IWildcardRouteItem
+	{
+		private Item _item = null;
+
+		public WildcardRouteItem(ISpawnProvider spawnProvider) : base(null, spawnProvider) { }
+
+		public WildcardRouteItem(Guid id, ISpawnProvider spawnProvider) : base(id, spawnProvider) { }
+
+		public WildcardRouteItem(Guid id, Dictionary<string, object> lazyFields, ISpawnProvider spawnProvider) : base(id, lazyFields, spawnProvider) { }
+
+		public WildcardRouteItem(Item item, ISpawnProvider spawnProvider) : base(item, spawnProvider)
+		{
+			_item = item;
+		}
+
+		/// <summary><para>Template: Wildcard Route</para><para>Field: ItemResolvingRules</para><para>Data type: Name Value List</para></summary>
+		public virtual ITextFieldWrapper ItemResolvingRules
+		{
+			get { return GetField<TextFieldWrapper>(FieldNames.ItemResolvingRules); }
+		}
+
+		/// <summary><para>Template: Wildcard Route</para><para>Field: ItemResolvingRules</para><para>Data type: Name Value List</para></summary>
+		public string ItemResolvingRulesValue
+		{
+			get { return ItemResolvingRules.Value; }
+		}
+		/// <summary><para>Template: Wildcard Route</para><para>Field: ItemSearchRootNode</para><para>Data type: Internal Link</para></summary>
+		public virtual ITextFieldWrapper ItemSearchRootNode
+		{
+			get { return GetField<TextFieldWrapper>(FieldNames.ItemSearchRootNode); }
+		}
+
+		/// <summary><para>Template: Wildcard Route</para><para>Field: ItemSearchRootNode</para><para>Data type: Internal Link</para></summary>
+		public string ItemSearchRootNodeValue
+		{
+			get { return ItemSearchRootNode.Value; }
+		}
+		/// <summary><para>Template: Wildcard Route</para><para>Field: ItemTemplates</para><para>Data type: TreelistEx</para></summary>
+		[IndexField(IndexFieldNames.ItemTemplates)]
+		public virtual IListFieldWrapper ItemTemplates
+		{
+			get { return GetField<ListFieldWrapper>(FieldNames.ItemTemplates, IndexFieldNames.ItemTemplates); }
+		}
+
+		/// <summary><para>Template: Wildcard Route</para><para>Field: ItemTemplates</para><para>Data type: TreelistEx</para></summary>
+		[IndexField(IndexFieldNames.ItemTemplates)]
+		public IEnumerable<Guid> ItemTemplatesValue
+		{
+			get { return ItemTemplates.Value; }
+		}
+		/// <summary><para>Template: Wildcard Route</para><para>Field: UrlGenerationRules</para><para>Data type: Name Value List</para></summary>
+		public virtual ITextFieldWrapper UrlGenerationRules
+		{
+			get { return GetField<TextFieldWrapper>(FieldNames.UrlGenerationRules); }
+		}
+
+		/// <summary><para>Template: Wildcard Route</para><para>Field: UrlGenerationRules</para><para>Data type: Name Value List</para></summary>
+		public string UrlGenerationRulesValue
+		{
+			get { return UrlGenerationRules.Value; }
+		}
+		/// <summary><para>Template: Wildcard Route</para><para>Field: WildcardItems</para><para>Data type: TreelistEx</para></summary>
+		[IndexField(IndexFieldNames.WildcardItems)]
+		public virtual IListFieldWrapper WildcardItems
+		{
+			get { return GetField<ListFieldWrapper>(FieldNames.WildcardItems, IndexFieldNames.WildcardItems); }
+		}
+
+		/// <summary><para>Template: Wildcard Route</para><para>Field: WildcardItems</para><para>Data type: TreelistEx</para></summary>
+		[IndexField(IndexFieldNames.WildcardItems)]
+		public IEnumerable<Guid> WildcardItemsValue
+		{
+			get { return WildcardItems.Value; }
+		}
+	
+		#region WildcardRouteItem Constants 
+
+		public static partial class Constants
+		{
+			public const string TemplateIdStr = "{B4C339CC-57FD-4FF2-ACBA-120B72C5FE78}";
+			public static Guid TemplateId = new Guid(TemplateIdStr);
+		}
+
+		public static partial class FieldNames
+		{
+			public const string ItemResolvingRules = "Item Resolving Rules";
+			public const string ItemSearchRootNode = "Item Search Root Node";
+			public const string ItemTemplates = "Item Templates";
+			public const string UrlGenerationRules = "Url Generation Rules";
+			public const string WildcardItems = "Wildcard Items";
+		}
+
+		public static partial class IndexFieldNames
+		{
+			public const string ItemResolvingRules = "item_resolving_rules";
+			public const string ItemSearchRootNode = "item_search_root_node";
+			public const string ItemTemplates = "item_templates";
+			public const string UrlGenerationRules = "url_generation_rules";
+			public const string WildcardItems = "wildcard_items";
+		}
+
+		#endregion
+	}
+}
+
+#endregion
 #region Product Data (UserDefined)
 
 namespace FortisDemo.Model.Templates.UserDefined

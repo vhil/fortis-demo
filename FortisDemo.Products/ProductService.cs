@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Fortis.Model;
 using Fortis.Search;
 using FortisDemo.Model.Templates.UserDefined;
 using Sitecore;
@@ -11,13 +10,11 @@ namespace FortisDemo.Products
 {
 	public class ProductService : IProductService
 	{
-		protected readonly IItemSearchFactory SearchFactory;
-		protected readonly IItemFactory ItemFactory;
+		protected readonly IItemSearchFactory ItemSearchFactory;
 
-		public ProductService(IItemSearchFactory searchFactory, IItemFactory itemFactory)
+		public ProductService(IItemSearchFactory itemSearchFactory)
 		{
-			this.SearchFactory = searchFactory;
-			this.ItemFactory = itemFactory;
+			this.ItemSearchFactory = itemSearchFactory;
 		}
 
 		public IEnumerable<IProductPageItem> GetAlProducts()
@@ -27,7 +24,7 @@ namespace FortisDemo.Products
 			{
 				var queryable = searchContext.GetQueryable<IProductPageItem>();
 
-				return this.SearchFactory.FilteredSearch(queryable)
+				return this.ItemSearchFactory.FilteredSearch(queryable)
 					.Where(x => x.Paths.Contains(productRepositoryID))
 					.ToList();
 			}
