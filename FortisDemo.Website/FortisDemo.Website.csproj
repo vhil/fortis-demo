@@ -53,6 +53,10 @@
       <HintPath>..\packages\Fortis.Search.Lucene.1.0.0.1\lib\net45\Fortis.Search.Lucene.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Helpfulcore.RenderingExceptions, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Helpfulcore.RenderingExceptions.1.0.7\lib\Helpfulcore.RenderingExceptions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Helpfulcore.RenderingExceptions.Types, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Helpfulcore.RenderingExceptions.Types.1.0.0\lib\Helpfulcore.RenderingExceptions.Types.dll</HintPath>
       <Private>True</Private>
@@ -182,6 +186,12 @@
     <Content Include="App_Config\Include\Fortis\Fortis.Search.Lucene.config" />
     <Content Include="App_Config\Include\Helpfulcore\Helpfulcore.Wildcards.config" />
     <Content Include="Areas\ContentPage\Views\ContentImage.cshtml" />
+    <Content Include="Views\Shared\RenderingExceptions\UnhandledException.cshtml" />
+    <Content Include="Views\Shared\RenderingExceptions\RenderingParametersException.cshtml" />
+    <Content Include="Views\Shared\RenderingExceptions\RenderingException.cshtml" />
+    <Content Include="App_Config\Include\Helpfulcore\Helpfulcore.RenderingExceptions.config">
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
