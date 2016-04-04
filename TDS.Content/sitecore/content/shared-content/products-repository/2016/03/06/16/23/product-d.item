@@ -12,7 +12,7 @@ templatekey: Product Page
 ----version----
 language: en
 version: 1
-revision: d713ca0d-5da2-4682-9323-3bf8c9f27352
+revision: d8284e0a-0d83-4e47-9016-36a6986344a8
 
 ----field----
 field: {DD1074E7-7F1C-4178-9078-219EDF3BB445}
@@ -32,9 +32,9 @@ Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cu
 field: {A7D05526-C33D-41FB-A2BB-5BD43CC4ECFF}
 name: Content Image
 key: content image
-content-length: 58
+content-length: 65
 
-<image mediaid="{E178AE5C-B467-4AE4-9A68-A6B978D77D24}" />
+<image mediaid="{E178AE5C-B467-4AE4-9A68-A6B978D77D24}" ></image>
 ----field----
 field: {461B3D23-9436-48AE-8C41-0DBCC5A66795}
 name: Product ID
@@ -83,14 +83,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-d713ca0d-5da2-4682-9323-3bf8c9f27352
+d8284e0a-0d83-4e47-9016-36a6986344a8
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160306T163507Z
+20160404T091926Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -98,3 +98,10 @@ key: __updated by
 content-length: 14
 
 sitecore\admin
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />

@@ -1,21 +1,14 @@
 ----item----
 version: 1
-id: {C1F3F0A1-145D-44A8-B2A3-2F395F10A653}
+id: {4E6BB8C8-F1F8-4F43-AFD3-61BA33E8903A}
 database: master
-path: /sitecore/content/shared-content/products-repository
-parent: {DF143017-8626-431B-A474-7BFA81795D74}
-name: products-repository
+path: /sitecore/templates/User Defined/Products/Product Repository/__Standard Values
+parent: {ACB06EF6-A3E2-47BE-BFCD-23CF289D188B}
+name: __Standard Values
 master: {00000000-0000-0000-0000-000000000000}
 template: {ACB06EF6-A3E2-47BE-BFCD-23CF289D188B}
 templatekey: Product Repository
 
-----field----
-field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
-name: __Icon
-key: __icon
-content-length: 26
-
-Office/32x32/data_copy.png
 ----field----
 field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
 name: __Masters
@@ -33,22 +26,22 @@ content-length: 1
 ----version----
 language: en
 version: 1
-revision: 7d4a3d41-4a69-4739-8eb7-30f76cd0623b
+revision: cd75109f-c89d-4340-a2b4-e1d1c35292b4
 
 ----field----
-field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
-name: __Display name
-key: __display name
-content-length: 19
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
 
-Products Repository
+sitecore\admin
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20160221T194431Z
+20160404T111243Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -62,14 +55,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-7d4a3d41-4a69-4739-8eb7-30f76cd0623b
+cd75109f-c89d-4340-a2b4-e1d1c35292b4
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160404T111342Z
+20160404T111311Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -1164,6 +1164,69 @@ namespace FortisDemo.Model.Templates.UserDefined
 }
 
 #endregion
+#region Product Repository (UserDefined)
+
+namespace FortisDemo.Model.Templates.UserDefined
+{
+	using global::System;
+	using global::System.Collections.Generic;
+	using global::Fortis.Model;
+	using global::Fortis.Model.Fields;
+	using global::Fortis.Providers;
+
+	/// <summary>
+	/// <para>Template interface</para>
+	/// <para>Template: Product Repository</para>
+	/// <para>ID: {ACB06EF6-A3E2-47BE-BFCD-23CF289D188B}</para>
+	/// <para>/sitecore/templates/User Defined/Products/Product Repository</para>
+	/// </summary>
+	[TemplateMapping(ProductRepositoryItem.Constants.TemplateIdStr, "InterfaceMap")]
+	public partial interface IProductRepositoryItem : ISitecoreItem 
+	{		
+	}
+
+	/// <summary>
+	/// <para>Template class</para><para>/sitecore/templates/User Defined/Products/Product Repository</para>
+	/// </summary>
+	[PredefinedQuery("TemplateId", ComparisonType.Equal, ProductRepositoryItem.Constants.TemplateIdStr, typeof(Guid))]
+	[TemplateMapping(ProductRepositoryItem.Constants.TemplateIdStr, "")]
+	public partial class ProductRepositoryItem : SitecoreItem, IProductRepositoryItem
+	{
+		private Item _item = null;
+
+		public ProductRepositoryItem(ISpawnProvider spawnProvider) : base(null, spawnProvider) { }
+
+		public ProductRepositoryItem(Guid id, ISpawnProvider spawnProvider) : base(id, spawnProvider) { }
+
+		public ProductRepositoryItem(Guid id, Dictionary<string, object> lazyFields, ISpawnProvider spawnProvider) : base(id, lazyFields, spawnProvider) { }
+
+		public ProductRepositoryItem(Item item, ISpawnProvider spawnProvider) : base(item, spawnProvider)
+		{
+			_item = item;
+		}
+
+	
+		#region ProductRepositoryItem Constants 
+
+		public static partial class Constants
+		{
+			public const string TemplateIdStr = "{ACB06EF6-A3E2-47BE-BFCD-23CF289D188B}";
+			public static Guid TemplateId = new Guid(TemplateIdStr);
+		}
+
+		public static partial class FieldNames
+		{
+		}
+
+		public static partial class IndexFieldNames
+		{
+		}
+
+		#endregion
+	}
+}
+
+#endregion
 #region Wildcard Route (Custom)
 
 namespace FortisDemo.Model.Templates.Custom

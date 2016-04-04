@@ -1,6 +1,5 @@
 ﻿using System.Web.Mvc;
 using Fortis.Model;
-using FortisDemo.Model;
 using FortisDemo.Model.Templates.UserDefined;
 using FortisDemo.Products;
 using FortisDemo.Web.Mvc.Controllers;
@@ -21,10 +20,10 @@ namespace FortisDemo.Website.Areas.Product.Controllers
 
 		public ActionResult ProductList()
 		{
-			var renderingModel = new ProductListRenderingModel(this.ItemFactory.GetRenderingContextItems<IContentPageItem, IItemWrapper>());
+			var renderingModel = new ProductListRenderingModel(this.ItemFactory.GetRenderingContextItems<IContentPageItem, IProductRepositoryItem>());
 			
 			// validate data source
-			if (renderingModel.RenderingItem == null || !renderingModel.RenderingItem.ItemLocation.StartsWith("/sitecore/content/shared-content"))
+			if (renderingModel.RenderingItem == null)
 			{
 				throw new RenderingParametersException("Data Source");
 			}

@@ -12,7 +12,7 @@ templatekey: Home Page
 ----version----
 language: en
 version: 1
-revision: f70d5e46-ef4f-4a27-a201-cb772b7c01dc
+revision: 420f9fcc-1257-4c0d-9944-6be79d183024
 
 ----field----
 field: {DD1074E7-7F1C-4178-9078-219EDF3BB445}
@@ -21,6 +21,13 @@ key: content title
 content-length: 4
 
 Home
+----field----
+field: {0240B88C-4348-472E-A9AD-22AAC7D3DAE2}
+name: Content Body
+key: content body
+content-length: 34
+
+Welcome to Fortis Demo front page.
 ----field----
 field: {A7D05526-C33D-41FB-A2BB-5BD43CC4ECFF}
 name: Content Image
@@ -55,14 +62,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-f70d5e46-ef4f-4a27-a201-cb772b7c01dc
+420f9fcc-1257-4c0d-9944-6be79d183024
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160110T192334Z
+20160404T092229Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

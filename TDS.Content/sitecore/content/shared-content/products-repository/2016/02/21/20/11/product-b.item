@@ -12,7 +12,7 @@ templatekey: Product Page
 ----version----
 language: en
 version: 1
-revision: e6053f42-be5a-4e6a-afb2-f9bfc5b3ed0d
+revision: ab878aee-4dde-4d44-a6f5-470c59b0b3d9
 
 ----field----
 field: {DD1074E7-7F1C-4178-9078-219EDF3BB445}
@@ -32,9 +32,9 @@ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor
 field: {A7D05526-C33D-41FB-A2BB-5BD43CC4ECFF}
 name: Content Image
 key: content image
-content-length: 58
+content-length: 65
 
-<image mediaid="{F8E59DD2-5B34-47A1-856B-0E486F9B440F}" />
+<image mediaid="{F8E59DD2-5B34-47A1-856B-0E486F9B440F}" ></image>
 ----field----
 field: {461B3D23-9436-48AE-8C41-0DBCC5A66795}
 name: Product ID
@@ -83,14 +83,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-e6053f42-be5a-4e6a-afb2-f9bfc5b3ed0d
+ab878aee-4dde-4d44-a6f5-470c59b0b3d9
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160221T211217Z
+20160404T091926Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -98,3 +98,10 @@ key: __updated by
 content-length: 14
 
 sitecore\admin
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />
