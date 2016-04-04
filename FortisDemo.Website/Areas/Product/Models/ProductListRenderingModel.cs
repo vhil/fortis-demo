@@ -4,9 +4,9 @@ using FortisDemo.Model.Templates.UserDefined;
 
 namespace FortisDemo.Website.Areas.Product.Models
 {
-	public class ProductListRenderingModel : RenderingModel<IContentPageItem, IContentPageItem>
+	public class ProductListRenderingModel : RenderingModel<IContentPageItem, IItemWrapper>
 	{
-		public ProductListRenderingModel(IRenderingModel<IContentPageItem, IContentPageItem> model)
+		public ProductListRenderingModel(IRenderingModel<IContentPageItem, IItemWrapper> model)
 			: base(model.PageItem, model.RenderingItem, model.Factory)
 		{
 		}

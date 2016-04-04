@@ -1,10 +1,11 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using FortisDemo.Model.Templates.UserDefined;
 
 namespace FortisDemo.Products
 {
 	public interface IProductService
 	{
-		IEnumerable<IProductPageItem> GetAlProducts();
+		IEnumerable<IProductPageItem> GetAllProducts(Guid productRepositoryID);
 	}
 }

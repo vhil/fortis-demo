@@ -17,9 +17,8 @@ namespace FortisDemo.Products
 			this.ItemSearchFactory = itemSearchFactory;
 		}
 
-		public IEnumerable<IProductPageItem> GetAlProducts()
+		public IEnumerable<IProductPageItem> GetAllProducts(Guid productRepositoryID)
 		{
-			var productRepositoryID = new Guid("{C1F3F0A1-145D-44A8-B2A3-2F395F10A653}");
 			using (var searchContext = ContentSearchManager.CreateSearchContext((SitecoreIndexableItem)Context.Item))
 			{
 				var queryable = searchContext.GetQueryable<IProductPageItem>();

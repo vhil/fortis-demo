@@ -1,0 +1,11 @@
+﻿@using Fortis.Model
+@using FortisDemo.Model.Templates.UserDefined
+@using Helpfulcore.RenderingExceptions
+@model IRenderingModel<IContentImageItem, IContentImageItem>
+
+@*Throw unexpected exception*@
+	@*@{ var a = DateTime.Now.Day/0; }*@
+
+<p>
+	@Model.RenderingItem.ContentImage.Render(new { @class = "img-responsive", mw = 350 })
+</p>

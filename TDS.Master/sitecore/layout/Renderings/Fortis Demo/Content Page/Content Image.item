@@ -1,0 +1,86 @@
+----item----
+version: 1
+id: {96CD0673-9DC7-4FD8-BF7F-F257CF228227}
+database: master
+path: /sitecore/layout/Renderings/Fortis Demo/Content Page/Content Image
+parent: {A3EE5891-D712-4A6F-95D2-42DF2E220BC7}
+name: Content Image
+master: {00000000-0000-0000-0000-000000000000}
+template: {99F8905D-4A87-4EB8-9F8B-A9BEBFB3ADD6}
+templatekey: View rendering
+
+----field----
+field: {51B435BC-F7B9-478A-9C51-52916AF96FF5}
+name: Path
+key: path
+content-length: 45
+
+~/Areas/ContentPage/Views/ContentImage.cshtml
+----field----
+field: {F869E724-0718-43E4-92A0-D612FE191CFB}
+name: Area
+key: area
+content-length: 11
+
+ContentPage
+----field----
+field: {F4069D71-74D7-4422-941D-54B517CF3001}
+name: Placeholder
+key: placeholder
+content-length: 12
+
+side-content
+----field----
+field: {2E51DF70-D3E4-458C-B03A-95C734DD39E7}
+name: Data source
+key: data source
+content-length: 0
+
+
+----field----
+field: {B5B27AF1-25EF-405C-87CE-369B3A004016}
+name: Datasource Location
+key: datasource location
+content-length: 51
+
+/sitecore/content/Sites/fortis-demo/website-content
+----field----
+field: {1A7C85E5-DC0B-490D-9187-BB1DBCB4C72F}
+name: Datasource Template
+key: datasource template
+content-length: 56
+
+/sitecore/templates/User Defined/Page Types/Content Page
+----version----
+language: en
+version: 1
+revision: a4b48625-f7eb-43a3-8f33-1b8f8a3395c1
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151222T130325Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+a4b48625-f7eb-43a3-8f33-1b8f8a3395c1
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20160404T082437Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

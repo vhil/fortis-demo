@@ -1,6 +1,13 @@
 ﻿@using Fortis.Model
 @using FortisDemo.Model.Templates.UserDefined
+@using Helpfulcore.RenderingExceptions
 @model IRenderingModel<IContentBodyItem, IContentBodyItem>
+
+@*Throw rendering exception*@
+@{
+	//if (... check required setting is missing...)
+	//throw new RenderingException("The main setting is not set. Please set a value to field [MyField] on site root item.");
+}
 
 <p>
 	@Model.RenderingItem.ContentBody
